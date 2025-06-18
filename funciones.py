@@ -55,3 +55,10 @@ print("El area del rectangulo es: ",areaRectangulo(base,altura))
 
 
 #Funciones sin parametros
+#def nombrefuncion():
+#no tienen una funcion de retorno return
+def bienvenida():
+    print("Hola Bienvenido")
+
+
+bienvenida()
