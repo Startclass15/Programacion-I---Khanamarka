@@ -30,11 +30,14 @@ boton=tk.Button(
     relief="flat"
     ) #
 boton.pack()
+
+def cambiarTexto2():
+    titulo.config(text="TIPO DE BOTONES")
 boton2=tk.Button(
     ventana, #contenedor 
     text="Seleccionar", #Texto del boton
     background="#22CAA3", #Fondo del boton
-    command=click, #El accionante click
+    command=cambiarTexto2, #El accionante click
     font=("Arial",14,"bold"), #Estilos del texto del boton
     fg="white", #Color del texto del boton
     width=20, #Ancho del Boton
@@ -45,6 +48,12 @@ boton2=tk.Button(
     ) 
 boton2.pack()
 
+#Funcion para cambiar el texto del label
+def cambiarTexto():
+    titulo.config(text="BOTONES")
+    boton2.config(text="CAMBIAR")
+
+
 #Botones tipo imagenes (image)
 #importar la libreria de imagenes
 imagen=PhotoImage(file="pyt.png")
@@ -54,7 +63,8 @@ botonImagen=tk.Button(
     relief="raised",
     text="Python",
     compound="bottom",
-    font=("Arial",16,"bold")
+    font=("Arial",16,"bold"),
+    command=cambiarTexto
 )
 botonImagen.pack()
 
